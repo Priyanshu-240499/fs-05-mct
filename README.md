@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+**Implement the React App With the Filtering Feature and Implement the Routing,Context API and use Redux for the State Management.**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **App should contain following Components**
 
-## Available Scripts
+Home Component
 
-In the project directory, you can run:
+Product Component
 
-### `npm start`
+User Component ContactUs Component Login Component
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Product details Component Nav Component
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Whenever Application Starts, It Should Show the Login Component as Following
 
-### `npm test`
+![](https://ik.imagekit.io/njzqmguob/Aspose.Words.b3d69670-1798-4ac2-be13-6129f0cd38d6.001.png?updatedAt=1679243493277)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- After entering the Credentials and on clicking login button, If Credentials are Valid then User should Navigate to the the Home Page or else show alert msg to user to enter Proper Credentials
+- Home Component (page) Should look like the below UI.
 
-### `npm run build`
+![](https://ik.imagekit.io/njzqmguob/Aspose.Words.b3d69670-1798-4ac2-be13-6129f0cd38d6.002.jpeg?updatedAt=1679243493367)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- If User click on Products in Navbar,Then User Should Navigate to the Products Component
+- UI Should look in the Following way
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](https://ik.imagekit.io/njzqmguob/Aspose.Words.b3d69670-1798-4ac2-be13-6129f0cd38d6.003.jpeg?updatedAt=1679243493534)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Here the Links on Left Panel should come from the Following URL
 
-### `npm run eject`
+API: <https://fakestoreapi.com/products/categories>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- On the Right Panel, show only the Titles (Title will be received from the API) of Products in the link format.
+- By default on the Right Panel, show Electronic Products Title Details and fetch data from the following API.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**API**: <https://fakestoreapi.com/products/category/electronic>.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- On Click of any Link in Left Panel like Jewellery or MensClothing or women's Clothing,
+- Fetch the Product Details of Respective Category from the Following APIs.
+- Display their product titles on the right Panel as a link
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Electronic Category :** <https://fakestoreapi.com/products/category/electronics>. **Jewellery Category:[https://fakestoreapi.com/products/category/jewelery. ](https://fakestoreapi.com/products/category/jewelery)MensClothing:[https://fakestoreapi.com/products/category/men's clothing ](https://fakestoreapi.com/products/category/men's%20clothing)WomensClothing:[https://fakestoreapi.com/products/category/women's clothing](https://fakestoreapi.com/products/category/women's%20clothing)**
 
-## Learn More
+- On Click on any Title Link, User Should Navigate to the Product Details Component And show the details of the Entire Product as following
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](Aspose.Words.b3d69670-1798-4ac2-be13-6129f0cd38d6.004.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- In the Product Details Component Display the Entire Details of the Product.
+- Details of Specific Product in the Product Details Component Should Come From the Redux Store.
+- If User Click on the User Link in the Navbar, then It should look like Following UI
 
-### Code Splitting
+![](https://ik.imagekit.io/njzqmguob/Aspose.Words.b3d69670-1798-4ac2-be13-6129f0cd38d6.004.png?updatedAt=1679243493461)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![](https://ik.imagekit.io/njzqmguob/Aspose.Words.b3d69670-1798-4ac2-be13-6129f0cd38d6.005.png?updatedAt=1679243493296)
 
-### Analyzing the Bundle Size
+- Here in the Users Component, Fetch the Details of User from the following API **API** :[ https://randomuser.me/api/?results=20](https://randomuser.me/api/?results=5000)![](Aspose.Words.b3d69670-1798-4ac2-be13-6129f0cd38d6.007.png)
+- Show the Users Details in the Table Format and the User should be able to filter the data Based on the Gender. .
+- If User click on Male Radio Button then it Should show only Male Users as Following
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![](https://ik.imagekit.io/njzqmguob/Aspose.Words.b3d69670-1798-4ac2-be13-6129f0cd38d6.008.png?updatedAt=1679243493306)
 
-### Making a Progressive Web App
+- And If Users Click on female radio buttons show only females.
+- If User clicks on the All radio button then shows all the details.
+- Implement Filtering Feature using Redux Concept.
+- If User Click on contact page then Show the Following UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![](https://ik.imagekit.io/njzqmguob/Aspose.Words.b3d69670-1798-4ac2-be13-6129f0cd38d6.009.png?updatedAt=1679243493378)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add Logout button in the Navbar after the Contact Link
+- If User clicks on the Logout Button and then he Should Navigate to the Login Screen.
